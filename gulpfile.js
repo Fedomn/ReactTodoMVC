@@ -1,14 +1,25 @@
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    react = require('gulp-react');
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch('app/**/*.*', function (file) {
-        livereload.changed(file);
+    gulp.watch(['src/**/*.*', 'index.html'], function () {
+        buildJSX();
+        livereload.changed('index.html');
     });
 });
 
 gulp.task('webserver', function() {
     connect.server();
 });
+
+
+gulp.task('build', buildJSX);
+
+var buildJSX = function () {
+    return gulp.src('src/**/*.*')
+        .pipe(react())
+        .pipe(gulp.dest('dist'));
+};

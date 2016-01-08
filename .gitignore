@@ -1,0 +1,4 @@
+.idea
+node_modules/*
+!browser.min.js
+!JSXTransformer.js

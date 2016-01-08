@@ -5,7 +5,7 @@ var Item = React.createClass({displayName: "Item",
 });
 
 ReactDOM.render(
-    React.createElement(Item, {name: "f"}),
+    React.createElement(Item, {name: "Item"}),
     document.getElementById('test')
 );
 

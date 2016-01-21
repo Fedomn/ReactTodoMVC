@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch(['src/**/*.*', 'index.html'], function () {
+    gulp.watch(['src/components/**/*.*', 'index.html'], function () {
         buildJSX();
         livereload.changed('index.html');
     });
@@ -19,7 +19,7 @@ gulp.task('webserver', function() {
 gulp.task('build', buildJSX);
 
 var buildJSX = function () {
-    return gulp.src('src/**/*.*')
+    return gulp.src('src/components/**/*.*')
         .pipe(react())
         .pipe(gulp.dest('dist'));
 };

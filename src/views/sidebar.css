@@ -1,0 +1,184 @@
+/* line 3, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+body {
+  background-color: #fbfbfb;
+}
+
+/* line 7, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#header {
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+/* line 12, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#main {
+  position: relative;
+  margin: 0;
+  padding-left: 230px;
+}
+
+/* line 18, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  flex: 0 0 auto;
+  width: 230px;
+  padding: 0;
+  margin: 0;
+}
+/* line 27, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar header {
+  border: none;
+}
+/* line 30, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar .menu {
+  border: none;
+}
+/* line 33, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar .item.header {
+  margin-right: -1px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #000;
+  color: #fff;
+}
+/* line 39, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar .item.header img {
+  margin-left: 14px;
+  width: auto;
+}
+/* line 44, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1em;
+  background: #f0f0f0;
+  width: 230px;
+}
+/* line 50, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar footer .icon {
+  float: right;
+}
+
+/* line 60, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#content {
+  flex: 1 1 auto;
+  padding: 2em;
+}
+
+/* line 66, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.clear-float::before, .clear-float::after {
+  content: '';
+  display: table;
+}
+/* line 71, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.clear-float::after {
+  clear: both;
+}
+
+/* line 76, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.align-centered {
+  text-align: center !important;
+}
+
+/* line 81, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+form input[required], textarea[required], select[required] {
+  background-color: ivory;
+}
+
+/* line 86, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar .menu .item .icon {
+  padding: 5px 10px;
+}
+/* line 88, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+#sidebar .menu .item .icon .fa {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+/* line 95, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 99, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.inverted.dimmer {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 103, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.action.input.short input {
+  width: 50px;
+}
+
+/* line 106, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.action.input.medium input {
+  width: 120px;
+}
+
+/* line 109, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.action.input.large input {
+  width: 180px;
+}
+
+/* line 112, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.action.input.xlarge input {
+  width: 250px;
+}
+
+/* line 116, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.modal > .close {
+  top: 0.8em;
+  right: 1em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* line 122, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.form .field {
+  clear: both;
+  margin: 0 0 2em;
+}
+
+/* line 127, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.ui.message {
+  margin-bottom: 2em;
+}
+
+/* line 133, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .toolbar > .segment {
+  box-shadow: none;
+}
+/* line 136, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .toolbar .inputs {
+  margin: 0 1em 0 0;
+}
+/* line 139, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .toolbar .actions {
+  margin: 0;
+}
+/* line 143, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .table-wrapper {
+  position: relative;
+}
+/* line 145, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .table-wrapper tr {
+  position: relative;
+}
+/* line 148, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .table-wrapper .actions {
+  display: none;
+  position: absolute;
+  right: 1em;
+}
+/* line 155, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+.data-grid .data-grid-footer > .segment {
+  box-shadow: none;
+  margin: 0;
+}
+
+/* line 162, /Users/manan/dev/workspace/RubyMine/game_data_analyse_system/app/assets/stylesheets/main.scss */
+input[required] {
+  background-color: ivory;
+}
